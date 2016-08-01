@@ -45,5 +45,12 @@
             <artifactId>kafka_2.10</artifactId>
             <version>0.8.2.1</version>
         </dependency>
+
+        <!-- netty4.1.4-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.4.Final</version>
+        </dependency>
     </dependencies>
 </project>

@@ -32,8 +32,12 @@ public class KafkaDemo {
 
         ConsumerConfig consumerConfig = new ConsumerConfig(props);
         ConsumerConnector consumer = kafka.consumer.Consumer.createJavaConsumerConnector(consumerConfig);
+//      DNS 10.159.32.201
+//      MP_D_03001001__DEV_STATUS_REPORT_NORMAL
+//      MP_D_03002002__DEV_STATUS_REPORT_NORMAL
 
-        String topic = "MP_D___DEV_STATUS_REPORT_NORMAL";
+//        String topic = "MP_D___DEV_STATUS_REPORT_NORMAL";
+        String topic = "MP_D_03002002__DEV_STATUS_REPORT_NORMAL";
 
 
         Map<String, Integer> topicCountMap = new HashMap<String, Integer>();
