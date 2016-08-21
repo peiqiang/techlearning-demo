@@ -52,12 +52,11 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.4.Final</version>
         </dependency>
+        <!-- avro1.7.7 -->
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.7.7</version>
+        </dependency>
     </dependencies>
-
-    <!-- avro1.7.7 -->
-    <dependency>
-        <groupId>org.apache.avro</groupId>
-        <artifactId>avro</artifactId>
-        <version>1.7.7</version>
-    </dependency>
 </project>
