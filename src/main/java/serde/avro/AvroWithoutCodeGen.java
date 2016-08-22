@@ -18,7 +18,7 @@ import java.io.File;
 public class AvroWithoutCodeGen {
     public static void main(String[] args) throws Exception {
 //        serializing();
-        deSerializing();
+//        deSerializing();
     }
 
     public static void serializing() throws Exception {
@@ -47,14 +47,10 @@ public class AvroWithoutCodeGen {
         Schema schema = new Schema.Parser().parse(new File("E:\\workspace\\github\\techlearning-demo\\src\\main\\java\\serde\\avro\\user.avsc"));
 
         File file = new File("E:\\workspace\\github\\techlearning-demo\\src\\main\\java\\serde\\avro\\users.avro");
-        // Deserialize users from disk
         DatumReader<GenericRecord> datumReader = new GenericDatumReader<GenericRecord>(schema);
         DataFileReader<GenericRecord> dataFileReader = new DataFileReader<GenericRecord>(file, datumReader);
         GenericRecord user = null;
         while (dataFileReader.hasNext()) {
-            // Reuse user object by passing it to next(). This saves us from
-            // allocating and garbage collecting many objects for files with
-            // many items.
             user = dataFileReader.next(user);
             System.out.println(user);
         }
