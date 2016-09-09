@@ -77,6 +77,18 @@
             <artifactId>generex</artifactId>
             <version>1.0.0</version>
         </dependency>
-    </dependencies>
 
+
+        <!-- word parse -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
+        </dependency>
+    </dependencies>
 </project>

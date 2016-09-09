@@ -37,7 +37,7 @@ public class KafkaDemo {
 //      MP_D_03002002__DEV_STATUS_REPORT_NORMAL
 
 //        String topic = "MP_D___DEV_STATUS_REPORT_NORMAL";
-        String topic = "MP_D_03002002__DEV_STATUS_REPORT_NORMAL";
+        String topic = "MP_U___USER_INFO_REPORT";
 
 
         Map<String, Integer> topicCountMap = new HashMap<String, Integer>();

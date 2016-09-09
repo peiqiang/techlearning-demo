@@ -27,15 +27,19 @@ public class AvroParquetWriterReader {
 
     public static void main(String[] args) throws Exception {
         System.setProperty("hadoop.home.dir", "D:\\Program Files\\Java\\jdk1.7.0_80");
-        write();
-//        read();
+//        write();
+        read();
     }
 
     private static void read() throws Exception {
-        Path file = new Path(BASE_PATH + "\\all.parquet");
+        Path file = new Path("e:\\aaaa.pqt");
         AvroParquetReader<GenericRecord> reader = new AvroParquetReader<GenericRecord>(file);
         GenericRecord nextRecord = reader.read();
-        System.out.println(nextRecord);
+
+        while(nextRecord != null){
+            System.out.println(nextRecord);
+            nextRecord =  reader.read();
+        }
     }
 
     private static void write() throws Exception {
